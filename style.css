@@ -1,0 +1,290 @@
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background-color: #111827;
+    border-bottom: 1px solid #263247;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.logo span {
+    color: #a78bfa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Hero section */
+.hero {
+    min-height: 75vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.greeting {
+    color: #a78bfa;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+    color: white;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #cbd5e1;
+}
+
+.description {
+    max-width: 550px;
+    margin: 20px 0;
+    color: #94a3b8;
+}
+
+/* Button */
+.btn {
+    background-color: #7c3aed;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #6d28d9;
+}
+
+/* General sections */
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    color: #a78bfa;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #94a3b8;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span,
+.tag {
+    background-color: #1e293b;
+    color: #c4b5fd;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* Project card */
+.project-card {
+    background-color: #111827;
+    border: 1px solid #263247;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #263247;
+    color: #64748b;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+/* Certifications Section */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.certification-card {
+    background-color: #111827;
+    border: 1px solid #263247;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.certification-card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-5px);
+}
+
+.certification-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.certification-card p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Certifications Section */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.certification-card {
+    background-color: #111827;
+    border: 1px solid #263247;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.certification-card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-5px);
+}
+
+.certification-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Certifications Section */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.certification-card {
+    background-color: #111827;
+    border: 1px solid #263247;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.certification-card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-5px);
+}
+
+.certification-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.certification-card p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+/* Mobile layout for certification cards */
+@media (max-width: 600px) {
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+}
