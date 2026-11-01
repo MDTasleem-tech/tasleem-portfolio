@@ -1,261 +1,169 @@
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammed Tasleem — ECE student and aspiring software developer. Explore Java, web development, and backend projects.">
+    <title>Mohammed Tasleem | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Tasleem<span>.</span></h2>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0b1120;
-    color: #e2e8f0;
-    line-height: 1.7;
-}
+    <main>
+        <section class="hero">
+            <p class="greeting">HELLO, WORLD!</p>
+            <h1>I'm <span>Mohammed Tasleem</span></h1>
+            <h2>Aspiring Software Developer</h2>
+            <p class="description">
+                B.Tech ECE student building practical skills in Java, web development,
+                and backend technologies through hands-on projects.
+            </p>
+            <a href="#projects" class="btn">Explore My Work</a>
+            <a href="./resume.pdf" class="btn" download>Download Resume</a>
+            <a href="https://www.linkedin.com/in/mohammed-tasleem-31a1132b7/"
+               class="btn" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+        </section>
 
-a {
-    color: #c4b5fd;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I'm pursuing a B.Tech in Electronics and Communication Engineering
+                at Vignan's Institute of Information Technology. I'm interested in
+                software development and continuously improving my programming,
+                problem-solving, and project-building skills.
+            </p>
+        </section>
 
-a:hover {
-    color: #ffffff;
-}
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <span>Java</span>
+                <span>C</span>
+                <span>DSA</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Spring Boot</span>
+                <span>REST APIs</span>
+                <span>Git &amp; GitHub</span>
+            </div>
+        </section>
 
-/* Navigation */
-header {
-    background-color: #111827;
-    border-bottom: 1px solid #263247;
-}
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
 
-.navbar {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
+            <div class="project-card">
+                <h3>Student Grade Tracker — Web Application</h3>
+                <p>
+                    A student grade management web application for adding, viewing,
+                    editing, searching, and deleting student records and calculating grades.
+                </p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Spring Boot, REST API</p>
+                <a href="https://github.com/MDTasleem-tech/Student-Grade-Tracker"
+                   target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
+            </div>
 
-.logo {
-    color: #ffffff;
-}
+            <div class="project-card">
+                <h3>Student Grade Tracker — Java Console Application</h3>
+                <p>
+                    A menu-driven Java application for managing student marks,
+                    calculating totals and averages, assigning grades, and displaying
+                    individual student reports and a class summary.
+                </p>
+                <p><strong>Technologies:</strong> Java, arrays, ArrayList, OOP</p>
+                <a href="https://github.com/MDTasleem-tech/codealpha_tasks/tree/main/Task1_StudentGradeTracker"
+                   target="_blank" rel="noopener noreferrer">View CodeAlpha Task 1 on GitHub</a>
+            </div>
 
-.logo span {
-    color: #a78bfa;
-}
+            <div class="project-card">
+                <h3>Stock Trading Platform</h3>
+                <p>
+                    A Java console-based stock trading simulator using virtual cash.
+                    Users can view simulated stock prices, buy and sell shares, and
+                    view their holdings and account value.
+                </p>
+                <p><strong>Technologies:</strong> Java, arrays, loops, switch statements</p>
+                <a href="https://github.com/MDTasleem-tech/codealpha_tasks/tree/main/Task2_StockTradingPlatform"
+                   target="_blank" rel="noopener noreferrer">View CodeAlpha Task 2 on GitHub</a>
+                <p class="project-note">
+                    Educational simulator only. Prices are simulated; no real trading is performed.
+                </p>
+            </div>
 
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A responsive personal website created to showcase my skills,
+                    projects, certifications, resume, and contact information.
+                </p>
+                <p><strong>Technologies:</strong> HTML, CSS, GitHub Pages</p>
+                <a href="https://mdtasleem-tech.github.io/tasleem-portfolio/"
+                   target="_blank" rel="noopener noreferrer">View Live Portfolio</a>
+                <br><br>
+                <a href="https://github.com/MDTasleem-tech/tasleem-portfolio"
+                   target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+            </div>
 
-/* Hero Section */
-.hero {
-    min-height: 75vh;
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+            <div class="project-card">
+                <h3>CodeAlpha Tasks Repository</h3>
+                <p>
+                    A combined GitHub repository containing my two Java console
+                    projects prepared for the CodeAlpha task submission.
+                </p>
+                <a href="https://github.com/MDTasleem-tech/codealpha_tasks"
+                   target="_blank" rel="noopener noreferrer">View All CodeAlpha Tasks</a>
+            </div>
+        </section>
 
-.greeting {
-    color: #a78bfa;
-    letter-spacing: 4px;
-    font-size: 14px;
-}
+        <section id="certifications" class="section">
+            <h2>My Certifications</h2>
+            <div class="certification-grid">
+                <div class="certification-card">
+                    <h3>Microsoft Learn</h3>
+                    <p>Completed Microsoft learning modules.</p>
+                    <span class="tag">Microsoft</span>
+                </div>
+                <div class="certification-card">
+                    <h3>C Essentials 1</h3>
+                    <p>Cisco Networking Academy</p>
+                    <span class="tag">Programming</span>
+                </div>
+                <div class="certification-card">
+                    <h3>AI/ML Virtual Internship</h3>
+                    <p>EduSkills</p>
+                    <span class="tag">Artificial Intelligence</span>
+                </div>
+            </div>
+        </section>
 
-.hero h1 {
-    color: #ffffff;
-    font-size: 42px;
-    margin: 15px 0;
-}
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Let's connect and share ideas!</p>
+            <div class="skills-list">
+                <a href="https://github.com/MDTasleem-tech"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/mohammed-tasleem-31a1132b7/"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:mohammedtasleem.tech@gmail.com">Email Me</a>
+            </div>
+        </section>
+    </main>
 
-.hero h1 span {
-    color: #a78bfa;
-}
-
-.hero h2 {
-    color: #cbd5e1;
-    font-size: 24px;
-}
-
-.description {
-    max-width: 550px;
-    margin: 20px 0;
-    color: #94a3b8;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    background-color: #7c3aed;
-    color: #ffffff;
-    padding: 12px 25px;
-    border-radius: 8px;
-    margin: 8px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-    background-color: #6d28d9;
-    color: #ffffff;
-    transform: translateY(-2px);
-}
-
-/* General Sections */
-.section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-.section h2 {
-    color: #a78bfa;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.section p {
-    color: #94a3b8;
-}
-
-/* Skills */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skills-list span,
-.tag {
-    display: inline-block;
-    background-color: #1e293b;
-    color: #c4b5fd;
-    padding: 8px 16px;
-    border-radius: 6px;
-}
-
-/* Projects */
-#projects {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-}
-
-#projects > h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 0;
-}
-
-.project-card {
-    background-color: #111827;
-    border: 1px solid #263247;
-    padding: 25px;
-    border-radius: 12px;
-    transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.project-card:hover {
-    border-color: #a78bfa;
-    transform: translateY(-4px);
-}
-
-.project-card h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #94a3b8;
-}
-
-.project-note {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #94a3b8;
-}
-
-.tag {
-    margin-top: 15px;
-    margin-right: 8px;
-    font-size: 13px;
-}
-
-/* Certifications */
-.certification-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.certification-card {
-    background-color: #111827;
-    border: 1px solid #263247;
-    padding: 25px;
-    border-radius: 12px;
-    transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.certification-card:hover {
-    border-color: #a78bfa;
-    transform: translateY(-4px);
-}
-
-.certification-card h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.certification-card p {
-    color: #94a3b8;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px;
-    border-top: 1px solid #263247;
-    color: #64748b;
-}
-
-/* Mobile Responsive Design */
-@media (max-width: 700px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 75px 20px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero h2 {
-        font-size: 20px;
-    }
-
-    #projects,
-    .certification-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section {
-        padding: 45px 20px;
-    }
-}
+    <footer>
+        <p>© 2026 Mohammed Tasleem</p>
+    </footer>
+</body>
+</html>
