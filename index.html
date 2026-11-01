@@ -1,153 +1,261 @@
 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
 
-    <title>Mohammed Tasleem | Portfolio</title>
+a {
+    color: #c4b5fd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+a:hover {
+    color: #ffffff;
+}
 
-<body>
+/* Navigation */
+header {
+    background-color: #111827;
+    border-bottom: 1px solid #263247;
+}
 
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Tasleem<span>.</span></h2>
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+.logo {
+    color: #ffffff;
+}
 
-    <main>
-        <section class="hero">
-            <p class="greeting">HELLO, WORLD!</p>
+.logo span {
+    color: #a78bfa;
+}
 
-            <h1>I'm <span>Mohammed Tasleem</span></h1>
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-            <h2>Aspiring Software Developer</h2>
+/* Hero Section */
+.hero {
+    min-height: 75vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-            <p class="description">
-                ECE student learning Java and DSA,
-                building my skills one project at a time.
-            </p>
+.greeting {
+    color: #a78bfa;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
 
-            <a href="#projects" class="btn">Explore My Work</a>
-             <a href="./resume.pdf" class="btn" download>
-    Download Resume
-</a>
-        </section>
+.hero h1 {
+    color: #ffffff;
+    font-size: 42px;
+    margin: 15px 0;
+}
 
-        <section id="about" class="section">
-            <h2>About Me</h2>
+.hero h1 span {
+    color: #a78bfa;
+}
 
-            <p>
-                I'm pursuing B.Tech in Electronics and
-                Communication Engineering at Vignan's
-                Institute of Information Technology.
+.hero h2 {
+    color: #cbd5e1;
+    font-size: 24px;
+}
 
-                I'm passionate about software development
-                and continuously improving my coding skills.
-            </p>
-        </section>
+.description {
+    max-width: 550px;
+    margin: 20px 0;
+    color: #94a3b8;
+}
 
-        <section id="skills" class="section">
-            <h2>My Skills</h2>
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #7c3aed;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
 
-            <div class="skills-list">
-                <span>Java</span>
-                <span>C</span>
-                <span>DSA</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-        </section>
+.btn:hover {
+    background-color: #6d28d9;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
 
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
+/* General Sections */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
 
-            
-<div class="project-card">
-    <h3>Student Grade Tracker</h3>
+.section h2 {
+    color: #a78bfa;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
-    <p>
-        A menu-driven Java application that manages student marks,
-        calculates grades, generates marksheets, and displays
-        class performance summaries.
-    </p>
+.section p {
+    color: #94a3b8;
+}
 
-    <p>
-        <strong>Technologies:</strong> Java, OOP, Arrays,
-        File Handling
-    </p>
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
-    <a href="https://github.com/MDTasleem-tech/Student-Grade-Tracker"
-       target="_blank" rel="noopener noreferrer">
-        View on GitHub
-    </a>
-</div>
-        </section>
+.skills-list span,
+.tag {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #c4b5fd;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
 
-<!-- Certifications Section -->
-<section id="certifications" class="section">
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
 
-    <h2>My Certifications</h2>
+#projects > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
 
-    <div class="certification-grid">
+.project-card {
+    background-color: #111827;
+    border: 1px solid #263247;
+    padding: 25px;
+    border-radius: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
 
-        <div class="certification-card">
-            <h3>Microsoft Certifications</h3>
-            <p>Professional certifications from Microsoft.</p>
-            <span class="tag">Microsoft</span>
-        </div>
+.project-card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-4px);
+}
 
-        <div class="certification-card">
-            <h3>C Essentials 1</h3>
-            <p>Cisco Networking Academy</p>
-            <span class="tag">Programming</span>
-        </div>
+.project-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 
-        <div class="certification-card">
-            <h3>Soft Skills</h3>
-            <p>TCS iON</p>
-            <span class="tag">Communication</span>
-        </div>
+.project-card p {
+    color: #94a3b8;
+}
 
-        <div class="certification-card">
-            <h3>AI/ML Virtual Internship</h3>
-            <p>EduSkills</p>
-            <span class="tag">Artificial Intelligence</span>
-        </div>
+.project-note {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #94a3b8;
+}
 
-    </div>
+.tag {
+    margin-top: 15px;
+    margin-right: 8px;
+    font-size: 13px;
+}
 
-</section>
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
+/* Certifications */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
 
-    <p>Let's connect and share ideas!</p>
+.certification-card {
+    background-color: #111827;
+    border: 1px solid #263247;
+    padding: 25px;
+    border-radius: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
 
-    <div class="skills-list">
-        <a href="https://github.com/MDTasleem-tech"
-           target="_blank">GitHub</a>
+.certification-card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-4px);
+}
 
-        <a href="https://www.linkedin.com/in/mohammed-tasleem-31a1132b7/"
-           target="_blank">LinkedIn</a>
-    </div>
-</section>
-    </main>
+.certification-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 
-    <footer>
-        <p>© 2026 Mohammed Tasleem</p>
-    </footer>
+.certification-card p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
 
-</body>
-</html>
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #263247;
+    color: #64748b;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    #projects,
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 45px 20px;
+    }
+}
